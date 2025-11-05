@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link} from "react-router";
+import { Link } from "react-router";
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Toggle */}
             <button
-                className="md:hidden p-2"
+                className="md:hidden p-2 text-black"
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Toggle menu"
             >
@@ -59,7 +59,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center space-y-4 py-6 md:hidden z-40">
+                <div className="absolute top-16 left-0 w-full bg-white text-black shadow-md flex flex-col items-center space-y-4 py-6 md:hidden z-40">
                     <a
                         href="#features"
                         className="hover:text-black transition"

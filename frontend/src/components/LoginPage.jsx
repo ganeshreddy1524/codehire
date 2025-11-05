@@ -157,7 +157,7 @@ const Login = ({ onJoinRoom }) => {
                 <div className="mt-6 text-center">
                     <button
                         onClick={createNewRoom}
-                        className="text-blue-300 hover:text-blue-200 text-sm flex items-center justify-center gap-2 mx-auto transition duration-200"
+                        className="text-white hover:text-black cursor-pointer text-sm flex items-center justify-center gap-2 mx-auto transition duration-200"
                     >
                         <Sparkles className="w-4 h-4" />
                         Create new room with unique ID
@@ -165,9 +165,9 @@ const Login = ({ onJoinRoom }) => {
                 </div>
 
                 {/* Debug info - remove in production */}
-                <div className="mt-4 p-2 bg-blue-500/10 rounded text-xs text-blue-300 text-center">
+                {/* <div className="mt-4 p-2 bg-blue-500/10 rounded text-xs text-blue-300 text-center">
                     <p>User ID: {localStorage.getItem('codecollab_userId')?.substring(0, 8)}...</p>
-                </div>
+                </div> */}
             </div>
         </div>
     );

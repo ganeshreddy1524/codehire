@@ -34,7 +34,7 @@ function JobList({ jobs, loading }) {
 
     // ✅ No results
     if (!jobs || jobs.length === 0) {
-        return <p className="text-center text-gray-600 mt-6">No jobs found</p>;
+        return <p className="text-center text-gray-600 mt-6 h-[20vh]">No jobs found</p>;
     }
 
     // ✅ Handle Load More
